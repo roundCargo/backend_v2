@@ -17,7 +17,7 @@ import samhap.roundcargo_v2.domain.common.model.Enum.Status;
 public class User extends BaseEntity {
 
     @Id
-    private String id; // 외부 로그인 기반 (카카오 ID)
+    private Long id; // 외부 로그인 기반 (카카오 ID)
 
     private String name;
 
