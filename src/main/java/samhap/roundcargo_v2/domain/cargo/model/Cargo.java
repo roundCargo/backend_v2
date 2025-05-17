@@ -3,6 +3,7 @@ package samhap.roundcargo_v2.domain.cargo.model;
 import jakarta.persistence.*;
 import lombok.*;
 import samhap.roundcargo_v2.domain.common.model.BaseEntity;
+import samhap.roundcargo_v2.domain.common.model.Enum.CargoStatus;
 import samhap.roundcargo_v2.domain.factory.model.Factory;
 
 import java.time.LocalDateTime;
@@ -38,7 +39,7 @@ public class Cargo extends BaseEntity {
     private LocalDateTime unloadTime;
 
     @Enumerated(EnumType.STRING)
-    private FreightStatus friehgtStatus;
+    private CargoStatus status;
 
     @ManyToOne
     @JoinColumn(name = "src_id")

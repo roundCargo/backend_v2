@@ -6,6 +6,7 @@ import org.locationtech.jts.geom.Point;
 import samhap.roundcargo_v2.domain.common.model.Account;
 import samhap.roundcargo_v2.domain.common.model.BaseEntity;
 import samhap.roundcargo_v2.domain.common.model.Enum.Role;
+import samhap.roundcargo_v2.domain.common.model.Enum.Status;
 
 @Entity
 @Getter
