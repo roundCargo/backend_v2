@@ -8,6 +8,7 @@ import samhap.roundcargo_v2.domain.common.model.Enum.Role;
 import samhap.roundcargo_v2.domain.common.model.Enum.Status;
 
 @Entity
+@Table(name = "users")
 @Getter
 @Setter
 @NoArgsConstructor
@@ -22,7 +23,7 @@ public class User extends BaseEntity {
 
     private String phoneNumber;
 
-    private String bussinessNumber;
+    private String businessNumber;
 
     @Enumerated(EnumType.STRING)
     private Role role;
